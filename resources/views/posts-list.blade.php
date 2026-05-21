@@ -1,4 +1,4 @@
-<x-layout title="Posts">
+<x-layout title="List">
     <div class="max-w-4xl mx-auto p-6 py-12">
         <div class="flex gap-4 items-center">
             <div class="h-px w-full bg-rose-200"></div>

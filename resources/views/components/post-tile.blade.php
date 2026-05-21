@@ -1,21 +1,20 @@
 <a href="{{ '/posts/' . $post->id }}"
     class="border-b border-neutral-200 py-6 px-2 hover:translate-x-1 group duration-300 flex items-center justify-between gap-3">
     <div class="flex gap-5 items-center">
-        <img src="{{ $post->poster_url }}"
-            class="h-30 aspect-video rounded-lg object-cover object-center border border-neutral-200" />
+        <div class="h-28 aspect-video relative">
+            <img src="{{ $post->poster_url }}"
+                class="h-28 aspect-video rounded-lg object-cover object-center border border-neutral-200" />
+            <div
+                class="absolute top-2 right-2 bg-black/70 text-white font-semibold rounded py-0.5 px-1 text-xs capitalize">
+                {{ $post->category }}
+            </div>
+        </div>
         <div>
             <h1
                 class="text-xl font-bold underline-offset-3 tracking-tight decoration-rose-300 group-hover:underline line-clamp-1 text-ellipsis">
                 {{ $post->title }}
             </h1>
-
-            <div class="flex gap-1.5 items-center mt-0.5">
-                <span class="text-rose-500 text-[15px] font-medium">{{ $post->author }}</span>
-                <div class="bg-rose-500 text-white font-medium rounded py-0.5 px-1.5 text-sm capitalize">
-                    {{ $post->category }}
-                </div>
-            </div>
-
+            <span class="text-rose-500 text-[15px] font-medium">{{ $post->author }}</span>
             <p class="mt-1 text-sm text-neutral-600 leading-normal tracking-normal line-clamp-2 text-ellipsis">
                 {{ $post->body }}
             </p>
