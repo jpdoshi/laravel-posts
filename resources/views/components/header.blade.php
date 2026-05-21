@@ -1,5 +1,6 @@
 <header class="sticky top-0 z-40">
-    <nav class="px-6 h-16 bg-white shadow-md shadow-rose-100 flex items-center justify-between">
+    <nav
+        class="px-6 h-16 bg-white border-b border-rose-100 shadow-md shadow-rose-100 flex items-center justify-between">
         <a href="{{ url('/posts') }}"
             class="text-xl font-bold text-rose-500 border-b-2 border-transparent border-dotted hover:border-black">Laravel
             Posts</a>
