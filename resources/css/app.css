@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter';
+}
+
+body::selection {
+    color: white;
+    background-color: theme(--color-rose-400);
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+button {
+    background-color: theme(--color-rose-600);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition-duration: 300ms;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: theme(--color-rose-500);
+}
