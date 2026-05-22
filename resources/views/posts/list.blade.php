@@ -8,7 +8,7 @@
 
         <div class="mt-3">
             @foreach ($posts as $post)
-                <x-post-tile :post="$post"></x-post-tile>
+                <x-posts.post-tile :post="$post"></x-posts.post-tile>
             @endforeach
         </div>
     </div>
