@@ -6,7 +6,7 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Inter';
+    --font-sans: 'IBM Plex Sans';
 }
 
 body::selection {

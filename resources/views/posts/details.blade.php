@@ -12,7 +12,7 @@
         <img src="{{ $post->poster_url }}"
             class="w-full aspect-video object-cover object-center rounded-2xl border border-neutral-300" />
 
-        <h1 class="text-4xl font-black leading-snug tracking-tighter mt-4">{{ $post->title }}</h1>
+        <h1 class="text-4xl font-black leading-snug tracking-tight mt-4">{{ $post->title }}</h1>
 
         <div class="mt-5 flex items-center justify-between">
             <span class="font-semibold text-white bg-black py-1 px-2 capitalize rounded-md">{{ $post->category }}</span>

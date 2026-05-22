@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome');
 
 Route::get('/posts', function () {
-    $posts = Post::all();
+    $posts = Post::paginate();
 
     return view('posts.list', compact('posts'));
 });
