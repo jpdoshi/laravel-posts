@@ -14,7 +14,7 @@
                 class="text-xl font-bold underline-offset-3 tracking-tight decoration-emerald-200 group-hover:underline line-clamp-1 text-ellipsis">
                 {{ $post->title }}
             </h1>
-            <span class="text-emerald-500 text-[15px] font-medium">{{ $post->author }}</span>
+            <span class="text-emerald-500 text-[15px] font-medium">-{{ $post->author }}</span>
             <p class="mt-1 text-sm text-neutral-600 leading-normal tracking-normal line-clamp-2 text-ellipsis">
                 {{ $post->body }}
             </p>

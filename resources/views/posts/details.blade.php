@@ -16,7 +16,7 @@
 
         <div class="mt-5 flex items-center justify-between">
             <span class="font-semibold text-white bg-black py-1 px-2 capitalize rounded-md">{{ $post->category }}</span>
-            <div class="text-lg font-medium text-emerald-500">— {{ $post->author }}</div>
+            <div class="text-lg font-medium text-emerald-500">-{{ $post->author }}</div>
         </div>
 
         <div class="text-[17px] text-stone-700 mt-8">{!! nl2br($post->body) !!}</div>
