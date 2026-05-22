@@ -11,7 +11,7 @@
 
 body::selection {
     color: white;
-    background-color: theme(--color-rose-400);
+    background-color: theme(--color-emerald-300);
 }
 
 img {
@@ -21,7 +21,7 @@ img {
 }
 
 button {
-    background: linear-gradient(theme(--color-rose-400), theme(--color-rose-600));
+    background: linear-gradient(theme(--color-emerald-400), theme(--color-emerald-600));
     color: white;
     padding: 7px 14px;
     border-radius: 8px;
@@ -36,5 +36,5 @@ button {
 }
 
 button:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.05);
 }

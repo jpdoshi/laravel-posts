@@ -13,7 +13,7 @@
 
 <body class="antialiased min-h-screen max-w-screen flex flex-col overflow-x-hidden">
     <x-header></x-header>
-    <main class="bg-rose-50/50 flex-1">
+    <main class="bg-slate-50 flex-1">
         {{ $slot }}
     </main>
 </body>

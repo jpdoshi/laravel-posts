@@ -11,10 +11,10 @@
         </div>
         <div>
             <h1
-                class="text-xl font-bold underline-offset-3 tracking-tight decoration-rose-300 group-hover:underline line-clamp-1 text-ellipsis">
+                class="text-xl font-bold underline-offset-3 tracking-tight decoration-emerald-200 group-hover:underline line-clamp-1 text-ellipsis">
                 {{ $post->title }}
             </h1>
-            <span class="text-rose-500 text-[15px] font-medium">{{ $post->author }}</span>
+            <span class="text-emerald-500 text-[15px] font-medium">{{ $post->author }}</span>
             <p class="mt-1 text-sm text-neutral-600 leading-normal tracking-normal line-clamp-2 text-ellipsis">
                 {{ $post->body }}
             </p>
@@ -23,7 +23,7 @@
 
     <div class="size-5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-            class="size-5 group-hover:text-rose-500">
+            class="size-5 group-hover:text-emerald-500">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
         </svg>
     </div>
