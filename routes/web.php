@@ -1,18 +1,11 @@
 <?php
 
-use App\Models\Post;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'welcome');
+// redirect to posts list page
+Route::get('/', fn () => redirect('/posts'));
 
-Route::get('/posts', function () {
-    $posts = Post::paginate();
-
-    return view('posts.list', compact('posts'));
-});
-
-Route::get('/posts/{id}', function (string $id) {
-    $post = Post::findOrFail($id);
-
-    return view('posts.details', compact('post'));
-});
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts/search', [PostController::class, 'search'])->name('posts.search');
+Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
