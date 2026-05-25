@@ -27,7 +27,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        // create new post
+        $validatedData = $request->validate([
+            'title' => 'required|min:5',
+            'body' => 'required|min:20',
+            'author' => 'required|min:8',
+            'poster_url' => 'required',
+            'category' => 'required|min:2',
+        ]);
+
+        Post::create($validatedData);
+
+        return redirect()->route('posts.index')->with('success', 'Post created successfully!');
     }
 
     /**

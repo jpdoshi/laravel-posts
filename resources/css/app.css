@@ -11,7 +11,7 @@
 
 body::selection {
     color: white;
-    background-color: theme(--color-emerald-300);
+    background-color: theme(--color-emerald-400);
 }
 
 img {
