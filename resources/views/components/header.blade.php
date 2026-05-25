@@ -10,7 +10,7 @@
                     class="border border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 duration-300 focus:border-emerald-500 focus:shadow-[0_0_0_3px_rgb(208,250,229)] rounded-lg h-9 px-3 outline-0 w-xs font-medium text-[15px]"
                     placeholder="Search Posts..." />
             </form>
-            <button>
+            <a href="/posts/create" class="btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                     stroke="currentColor" class="size-4 -translate-y-px">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -18,7 +18,7 @@
                 <span>
                     Add Post
                 </span>
-            </button>
+            </a>
         </div>
     </nav>
 </header>

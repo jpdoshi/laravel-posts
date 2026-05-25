@@ -17,12 +17,17 @@ class PostController extends Controller
         return view('posts.index', compact('posts'));
     }
 
+    public function create()
+    {
+        return view('posts.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        // create new post
     }
 
     /**

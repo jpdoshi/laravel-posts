@@ -20,7 +20,7 @@ img {
     user-drag: none;
 }
 
-button {
+button, .btn {
     background: linear-gradient(theme(--color-emerald-400), theme(--color-emerald-600));
     color: white;
     padding: 7px 14px;
@@ -35,6 +35,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, .btn:hover {
     filter: brightness(1.1);
 }
