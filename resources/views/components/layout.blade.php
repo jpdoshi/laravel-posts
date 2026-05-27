@@ -9,6 +9,8 @@
     <title>{{ $title }} - Laravel Posts</title>
     {{ Vite::fonts() }}
     @vite(['resources/css/app.css'])
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
 </head>
 
 <body class="antialiased max-w-screen overflow-x-hidden">
@@ -28,6 +30,26 @@
             selector: 'textarea.tinymce',
             toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
         });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <script>
+        // Create an instance of Notyf with customized clean layout values
+        const notyf = new Notyf({
+            duration: 4000,
+            position: { x: 'right', y: 'bottom' },
+            dismissible: true
+        });
+
+        // Fire Laravel flashes safely without scoping issues
+        @if (session('success'))
+            notyf.success("{{ session('success') }}");
+        @endif
+
+        @if (session('error'))
+            notyf.error("{{ session('error') }}");
+        @endif
     </script>
 </body>
 
