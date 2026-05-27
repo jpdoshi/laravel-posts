@@ -1,12 +1,12 @@
 <header class="sticky top-0 z-40">
     <nav
-        class="px-6 h-16 bg-white border-b border-slate-200 shadow-lg shadow-black/5 flex items-center justify-between">
+        class="px-6 h-16 bg-white border-b border-slate-200 shadow-lg shadow-black/5 flex gap-5 items-center justify-between">
         <a href="{{ url('/posts') }}"
-            class="text-xl font-bold border-b-2 text-slate-800 border-transparent border-dotted hover:border-emerald-400">Laravel
+            class="text-xl font-bold border-b-2 text-slate-800 border-transparent border-dotted whitespace-nowrap hover:border-emerald-400">Laravel
             Posts</a>
         <form action="/posts/search" method="GET">
             <input name="q" required
-                class="border border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 duration-300 focus:border-emerald-500 focus:shadow-[0_0_0_3px_rgb(208,250,229)] rounded-lg h-9 px-3 outline-0 w-md font-medium text-[15px]"
+                class="border border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 duration-300 focus:border-emerald-500 focus:shadow-[0_0_0_3px_rgb(208,250,229)] rounded-lg h-9 px-3 outline-0 w-sm xl:w-md max-w-full font-medium text-[15px]"
                 placeholder="Search Posts..." />
         </form>
         <div class="flex gap-3 items-center">
